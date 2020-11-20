@@ -30,7 +30,7 @@ export default new Vuex.Store({
           .then((res) => {
             if (res.statusCode !== 200) return reject();
             store.commit('setJobs', res.result);
-            return resolve(res);
+            return resolve(res.result);
           });
       }));
     },
