@@ -1,0 +1,48 @@
+{
+    "version": "1.0",
+    "statusCode": 200,
+    "result": {
+        "items": [
+            {
+                "jobId": 2363057441,
+                "positionName": "Gerber Operatörü",
+                "companyName": "Testoğlu Lahmacun Pide Ve Kebap",
+                "durationDay": 0,
+                "durationDayText": "Taze çıktı!",
+                "imageUrl": "http://localhost/bluecollar/Company/Job/000/000/000/avatar/13920170713010155805.jpg",
+                "distance": "8,53 km yakınında",
+                "latitude": 41.050968170166023,
+                "longitude": 29.062856674194339,
+                "cityName": "İstanbul",
+                "townName": "Çengelköy Mahallesi"
+            },
+            {
+                "jobId": 1607520297,
+                "positionName": "Frontend Developer",
+                "companyName": "Fake Company",
+                "durationDay": 0,
+                "durationDayText": "Son Fırsat!",
+                "imageUrl": "http://localhost/bluecollar/Company/Job/000/000/000/avatar/13920170713010155805.jpg",
+                "distance": "3,2 km yakınında",
+                "latitude": 41.050968170166023,
+                "longitude": 29.062856674194339,
+                "cityName": "İstanbul",
+                "townName": "Barış Mahallesi"
+            },
+            {
+                "jobId": 9963686223,
+                "positionName": "Backend Developer",
+                "companyName": "Anonymous Company",
+                "durationDay": 0,
+                "durationDayText": "Acele et!",
+                "imageUrl": "http://localhost/bluecollar/Company/Job/000/000/000/avatar/13920170713010155805.jpg",
+                "distance": "9,23 km yakınında",
+                "latitude": 41.050968170166023,
+                "longitude": 29.062856674194339,
+                "cityName": "İstanbul",
+                "townName": "Ayazağa Mahallesi"
+            }
+        ],
+        "total": 3
+    }
+}
