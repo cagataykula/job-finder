@@ -3,25 +3,19 @@
     <div class="col-lg-12">
       <div class="col-lg-12 p-5">
         <form class="form-inline my-2 my-lg-0">
-          <div class="col-md-6 row">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-              v-model="search.text"
-            >
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </div>
-          <div class="col-md-6 row">
-            <span>Province: </span>
-            <div class="input-group">
-              <select class="custom-select" v-model="search.city">
-                <option value="" selected>All</option>
-                <option value="istanbul">Istanbul</option>
-                <option value="ankara">Ankara</option>
-              </select>
-            </div>
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            v-model="search.text"
+          >
+          <div class="input-group">
+            <select class="custom-select" v-model="search.city">
+              <option value="" selected>Province</option>
+              <option value="istanbul">Istanbul</option>
+              <option value="ankara">Ankara</option>
+            </select>
           </div>
         </form>
       </div>
