@@ -30,8 +30,22 @@ export default new Vuex.Store({
           .then((res) => {
             if (res.statusCode !== 200) return reject();
             store.commit('setJobs', res.result);
-            console.log('res.result', res.result);
             return resolve(res);
+          });
+      }));
+    },
+    getJobDetail(store, id) {
+      return new Promise(((resolve, reject) => {
+        fetch(`${baseURL}/api/jobDetail/${id}.json`, {
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+        })
+          .then((res) => res.json())
+          .then((res) => {
+            if (res.statusCode !== 200) return reject();
+            return resolve(res.result);
           });
       }));
     },

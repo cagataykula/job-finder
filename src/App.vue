@@ -1,7 +1,13 @@
 <template>
   <div id="app">
     <div class="container">
-        <router-view/>
+      <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/jobList">JobList</router-link>
+      </div>
+      <keep-alive>
+        <router-view :key='$route.fullPath' />
+      </keep-alive>
     </div>
   </div>
 </template>

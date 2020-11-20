@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-card
-      title="Gerber Operatörü"
+      :title="data.positionName"
       :img-src="`https://picsum.photos/300/150?id=${data.jobId}`"
       img-alt="Image"
       img-top
@@ -21,8 +21,8 @@
         </div>
       </b-card-text>
       <b-button
-        href="#"
         variant="primary"
+        @click="openJobDetail(data.jobId)"
       >İncele</b-button>
     </b-card>
   </div>
@@ -34,6 +34,11 @@ export default {
     data: {
       required: true,
       type: Object,
+    },
+  },
+  methods: {
+    openJobDetail(id) {
+      this.$router.push({ name: 'JobDetail', params: { id } });
     },
   },
 };
